@@ -1,4 +1,4 @@
-# jQuery PhotoRoller Plugin v0.1.0
+# jQuery PhotoRoller Plugin v1.0.0
 
 A mouseover cycle-through photo gallery (iPhoto-like).
 

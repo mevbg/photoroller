@@ -1,5 +1,5 @@
 /*!
-  jQuery PhotoRoller Plugin v0.1.0
+  jQuery PhotoRoller Plugin v1.0.0
   http://photoroller.martinmetodiev.com
 
   Copyright (c) 2015 Martin Metodiev
