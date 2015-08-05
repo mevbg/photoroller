@@ -6,6 +6,10 @@ A mouseover cycle-through photo gallery (iPhoto-like).
 
 jQuery PhotoRoller Plugin is a small jQuery plugin that puts a set of images one behind another and turns that deck of images into a beautiful slideshow. All you need to do is move the mouse cursor horizontally throughout the deck and all images will show sequentially depending on the x-position of the cursor in the container area. Just like the iPhoto thumbnails preview.
 
+## Demo
+
+<a href="http://photoroller.martinmetodiev.com" target="_blank">photoroller.martinmetodiev.com</a>
+
 ## Getting Started
 
 You can [download the plugin as an archive][zip].
