@@ -1,0 +1,61 @@
+{
+  "name": "photoroller",
+  "title": "jQuery PhotoRoller Plugin",
+  "description": "A mouseover cycle-through photo gallery (iPhoto-like)",
+  "keywords": [
+    "photoroller",
+    "cycle-through",
+    "gallery",
+    "iPhoto",
+    "photos",
+    "rollover",
+    "mouseover",
+    "mousemove",
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jQuery",
+    "plugin"
+  ],
+  "version": "0.1.0",
+  "homepage": "http://photoroller.martinmetodiev.com",
+  "authors": [
+    {
+      "name": "Martin Metodiev",
+      "email": "metodiev.martin@gmail.com",
+      "url": "http://martinmetodiev.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinmethod/photoroller.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "git://github.com/jquery/jquery.git"
+  },
+  "devDependencies": {
+    "normalize-css": "git://github.com/necolas/normalize.css.git",
+    "css_browser_selector": "git://github.com/verbatim/css_browser_selector.git",
+    "jquery": "git://github.com/jquery/jquery.git",
+    "showdown": "git://github.com/showdownjs/showdown.git",
+    "prism": "git://github.com/LeaVerou/prism.git"
+  },
+  "main": [
+    "dist/js/jquery.photoroller.js",
+    "dist/js/jquery.photoroller.min.js",
+    "dist/js/jquery.photoroller.min.js.map",
+    "dist/css/photoroller.css",
+    "dist/css/photoroller.min.css",
+    "dist/css/photoroller.min.css.map"
+  ],
+  "ignore": [
+    "**/.*",
+    "page",
+    ".bowerrc",
+    ".csslintrc",
+    ".jshintrc",
+    "Gruntfile.js",
+    "index.html",
+    "package.json"
+  ]
+}

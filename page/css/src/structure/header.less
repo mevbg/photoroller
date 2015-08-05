@@ -1,0 +1,96 @@
+//
+// Header
+// --------------------------------------------------
+
+
+//== General
+// -------------------------
+
+.page-header {
+    width: 100%;
+    height: 170px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: default;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-8 */
+    
+    .wrp-main { height: 100%; }
+
+    .ttl {
+        padding-top: 40px;
+        white-space: nowrap;
+    }
+
+    .description {
+        font-size: @font-size-normal; // 16px
+        color: @gray-darker;
+        margin-top: 10px;
+    }
+}
+
+.ribbon {
+    display: block;
+    width: 149px;
+    height: 149px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: url('http://martinmetodiev.com/images/ribbon.png') no-repeat right top;
+    background-size: 100% auto;
+}
+
+@media screen and (max-width: 999px) {
+
+    .page-header {
+        height: 130px;
+
+        .ttl { padding-top: 32px; }
+        
+        .description {
+            font-size: @font-size-normal - 2; // 14px
+            margin-top: 6px;
+        }
+    }
+
+    .ribbon {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+
+    .page-header {
+        height: 100px;
+
+        .ttl {
+            padding: 14px 60px 0 0;
+            white-space: normal;
+        }
+        
+        .description {
+            font-size: @font-size-normal - 3; // 13px
+            margin-top: 0;
+        }
+    }
+
+    .ribbon {
+        width: 99px;
+        height: 99px;
+    }
+
+}

@@ -1,0 +1,12 @@
+.git
+.gitignore
+CVS
+.svn
+.hg
+.lock-wscript
+.wafpickle-N
+*.swp
+.DS_Store
+._*
+npm-debug.log
+CNAME

@@ -1,0 +1,83 @@
+//
+// Section
+// --------------------------------------------------
+
+
+//== General
+// -------------------------
+
+.page-section {
+    position: relative;
+    z-index: 1;
+    margin: 170px auto;
+    background-color: #FFF;
+    
+    .box-shadow(0 0 10px -2px #CCC);
+   
+    .pad-main {
+        padding-top:    50px;
+        padding-bottom: 50px;
+    }
+
+    .col {
+        width: 48%;
+        padding: 0 1.7857142857%;
+        font-size: @font-size-normal;
+    }
+
+    .col-description,
+    .col-docs { float: left; }
+
+    .col-demo { float: right; }
+
+    .col-demo {
+        ul, ol, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .col-docs { clear: left; }
+
+    h2:not(:first-of-type),
+    .col-docs { margin-top: 50px; }
+
+    @media screen and (max-width: 999px) {
+
+        & { margin: 130px auto; }
+
+        .col {
+            width: 100%;
+            float: none;
+            font-size: @font-size-normal - 2; // 14px
+        }
+   
+        .pad-main {
+            padding-top:    40px;
+            padding-bottom: 40px;
+        }
+
+        h2:not(:first-of-type),
+        .col-docs,
+        .col-demo { margin-top: 40px; }
+
+    }
+
+    @media screen and (max-width: 599px) {
+
+        & { margin: 100px auto; }
+
+        .col { font-size: @font-size-normal - 3; } // 14px
+   
+        .pad-main {
+            padding-top:    30px;
+            padding-bottom: 30px;
+        }
+
+        h2:not(:first-of-type),
+        .col-docs,
+        .col-demo { margin-top: 30px; }
+
+    }
+}

@@ -1,0 +1,58 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors definitions
+// -------------------------
+
+@gray-base:             #000;
+@gray-darkest:          lighten(@gray-base, 13.5%); // #222
+@gray-darker:           lighten(@gray-base, 20.0%); // #333
+@gray-dark:             lighten(@gray-base, 26.8%); // #444
+@gray:                  lighten(@gray-base, 33.5%); // #555
+@gray-light:            lighten(@gray-base, 46.7%); // #777
+@gray-lighter:          lighten(@gray-base, 86.6%); // #ddd
+@gray-lightest:         lighten(@gray-base, 93.5%); // #eee
+
+@col-blue:              #369;
+@col-green:             #390;
+@col-red:               #C00;
+@col-note:              #FFC;
+
+
+//== Page colors
+// -------------------------
+
+//** Background color for `<body>`.
+@body-bg:               @gray-lightest;
+
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;
+
+//** Global textual link color.
+@link-normal-color:     @col-blue;
+@link-hover-color:      @col-green;
+@link-active-color:     @col-red;
+
+
+//== Typography
+// -------------------------
+
+@font-family-sans-serif:  "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monotype:    Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          20px;
+@font-size-normal:        ceil((@font-size-base * 0.80)); // ~16px
+@font-size-small:         ceil((@font-size-base * 0.70)); // ~14px
+
+@font-size-h1:            ceil((@font-size-base * 2.40)); // ~48px
+@font-size-h2:            ceil((@font-size-base * 2.00));
+
+@line-height-base:        1.5; // 24/16
+
+@headings-line-height:    1.1;
+@headings-color:          @gray-darker;
+@headings-padding:        3.5714285714%;
