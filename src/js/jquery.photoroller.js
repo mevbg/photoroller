@@ -1,5 +1,5 @@
 /*!
-  jQuery PhotoRoller Plugin v1.0.1
+  jQuery PhotoRoller Plugin v1.0.2
   http://photoroller.martinmetodiev.com
 
   Copyright (c) 2015 Martin Metodiev
@@ -77,7 +77,7 @@ $.fn.photoroller = function(options) {
             startpoint: options && options.startpoint ? options.startpoint : 1
         };
 
-        $.photoroller($.extend({target: $(this)}, this.opt));
+        $.photoroller($.extend(this.opt, {target: $(this)}));
     });
 };
 

@@ -18,8 +18,8 @@ module.exports = function(grunt) {
                 src: ['src/js/**/*.js']
             },
 
-            page: {
-                src: ['page/js/src/**/*.js']
+            demo: {
+                src: ['demo_components/js/src/**/*.js']
             }
         },
 
@@ -32,8 +32,8 @@ module.exports = function(grunt) {
                 src: ['src/css/<%= pkg.name.toLowerCase() %>.css']
             },
             
-            page: {
-                src: ['page/css/page.min.css']
+            demo: {
+                src: ['demo_components/css/demo.min.css']
             }
         },
 
@@ -54,11 +54,6 @@ module.exports = function(grunt) {
             plugin: {
                 src: ['src/js/jquery.<%= pkg.name.toLowerCase() %>.js'],
                 dest: 'dist/js/jquery.<%= pkg.name.toLowerCase() %>.js'
-            },
-
-            page: {
-                src: ['page/js/src/markdown.js', 'page/js/src/demo.js'],
-                dest: 'page/js/page.js'
             }
         },
 
@@ -73,14 +68,9 @@ module.exports = function(grunt) {
                 dest: 'dist/js/jquery.<%= pkg.name.toLowerCase() %>.min.js'
             },
 
-            page: {
-                src:  'page/js/page.js',
-                dest: 'page/js/page.min.js'
-            },
-
-            libs: {
-                src:  'page/components/prism/prism.js',
-                dest: 'page/components/prism/prism.min.js'
+            demo: {
+                src:  'demo_components/js/src/demo.js',
+                dest: 'demo_components/js/demo.min.js'
             }
         },
 
@@ -101,14 +91,15 @@ module.exports = function(grunt) {
                 }
             },
 
-            page: {
+            demo: {
                 options: {
                     compress: true,
                     sourceMap: true,
-                    sourceMapURL: 'page.min.css.map',
-                    sourceMapBasepath: 'page/css/src'                },
+                    sourceMapURL: 'demo.min.css.map',
+                    sourceMapBasepath: 'demo_components/css/src'
+                },
                 files: {
-                    'page/css/page.min.css': 'page/css/src/bundle.less'
+                    'demo_components/css/demo.min.css': 'demo_components/css/src/demo.less'
                 }
             }
         },
@@ -132,7 +123,8 @@ module.exports = function(grunt) {
             options: {
                 files: [
                     'package.json',
-                    'bower.json'
+                    'bower.json',
+                    '<%= pkg.name.toLowerCase() %>.jquery.json'
                 ],
                 updateConfigs: ['pkg'],
                 commit: true,
@@ -178,14 +170,14 @@ module.exports = function(grunt) {
                 tasks: ['css:plugin']
             },
 
-            js_page: {
-                files: ['page/js/src/**/*.js'],
-                tasks: ['js:page']
+            js_demo: {
+                files: ['demo_components/js/src/**/*.js'],
+                tasks: ['js:demo']
             },
 
-            css_page: {
-                files: ['page/css/src/**/*.less'],
-                tasks: ['css:page']
+            css_demo: {
+                files: ['demo_components/css/src/**/*.less'],
+                tasks: ['css:demo']
             }
         }
     });
@@ -216,7 +208,7 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['build']);
     
     grunt.registerTask('build', 'Running all tasks...', function() {
-        grunt.task.run('js:plugin', 'css:plugin', 'js:page', 'css:page');
+        grunt.task.run('js:plugin', 'css:plugin', 'js:demo', 'css:demo');
     });
 
     
@@ -230,21 +222,13 @@ module.exports = function(grunt) {
     });
     
     
-    // Page tasks
-    grunt.registerTask('js:page', 'Running only JS page tasks...', function() {
-        grunt.task.run('jshint:page', 'uglify:libs', 'concat:page', 'uglify:page');
+    // Demo tasks
+    grunt.registerTask('js:demo', 'Running only JS demo tasks...', function() {
+        grunt.task.run('jshint:demo', 'uglify:demo');
     });
     
-    grunt.registerTask('css:page', 'Running only CSS page tasks...', function() {
-        grunt.file.copy(
-            'page/components/normalize-css/normalize.css',
-            'page/css/src/initial/normalize.less'
-        );
-        grunt.file.copy(
-            'page/components/prism/themes/prism-coy.css',
-            'page/css/src/components/prism.less'
-        );
-        grunt.task.run('less:page', 'csslint:page');
+    grunt.registerTask('css:demo', 'Running only CSS demo tasks...', function() {
+        grunt.task.run('less:demo', 'csslint:demo');
     });
 
 

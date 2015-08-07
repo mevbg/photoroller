@@ -32,8 +32,6 @@
   "predef": [
     "JSON",
     "jQuery",
-    "Typekit",
-    "showdown",
-    "Prism"
+    "Typekit"
   ]
 }
