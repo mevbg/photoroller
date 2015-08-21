@@ -28,7 +28,7 @@ $.photoroller = function(options) {
                 target.children().length > 0 ? target.children() : null;
         },
         defineStartpoint = function() {
-            return options.startpoint ? options.startpoint : 1;
+            return options.startpoint ? options.startpoint - 1 : 0;
         },
         getWidth = function() {
             return target.width();
@@ -55,7 +55,7 @@ $.photoroller = function(options) {
 
     var width = getWidth(),
         startpoint = defineStartpoint(),
-        activeNumber = startpoint- 1,
+        activeNumber = startpoint,
         jump_back = defineFixedImage(),
         jumppoint_click = defineFixedImageClick();
     // Showing the startpoint
@@ -72,13 +72,13 @@ $.photoroller = function(options) {
     });
     target.mouseleave(function(){
         if (jump_back){
-            setActive(nodes[startpoint]);
+            activeNumber = startpoint;
+            setActive(nodes[activeNumber]);
         }
     });
     target.click(function(){
         if (jump_back && jumppoint_click){
             startpoint = activeNumber;
-            setActive(nodes[startpoint]);
         }
     });
 
