@@ -13,7 +13,6 @@
 // Defining PhotoRoller
 $.photoroller = function(options) {
     // Preparing options
-    console.log(options);
     options = $.extend({
         startpoint: 1,
         jump_back: false,
