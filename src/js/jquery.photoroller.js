@@ -13,7 +13,11 @@
 // Defining PhotoRoller
 $.photoroller = function(options) {
     // Preparing options
-    options = $.extend({startpoint: 1}, options);
+    options = $.extend({
+        startpoint: 1,
+        jump_back: false,
+        jumppoint_click: true
+    }, options);
 
     var defineTarget = function() {
             var main = $('#photoroller');
@@ -26,7 +30,7 @@ $.photoroller = function(options) {
                 target.children().length > 0 ? target.children() : null;
         },
         defineStartpoint = function() {
-            return options.startpoint ? options.startpoint : 1;
+            return options.startpoint ? options.startpoint - 1 : 0;
         },
         getWidth = function() {
             return target.width();
@@ -36,6 +40,12 @@ $.photoroller = function(options) {
             $(obj).addClass('pr-active');
             
             return $(obj);
+        },
+        defineFixedImage = function() {
+            return typeof(options.jump_back) === 'undefined'? false : options.jump_back;
+        },
+        defineFixedImageClick = function() {
+            return typeof(options.jumppoint_click) === 'undefined'? true : options.jumppoint_click;
         };
 
     var target = defineTarget(); if (!target) { return false; }
@@ -47,8 +57,9 @@ $.photoroller = function(options) {
 
     var width = getWidth(),
         startpoint = defineStartpoint(),
-        activeNumber = startpoint-1;
-
+        activeNumber = startpoint,
+        jump_back = defineFixedImage(),
+        jumppoint_click = defineFixedImageClick();
     // Showing the startpoint
     setActive(nodes[activeNumber]);
     
@@ -59,6 +70,17 @@ $.photoroller = function(options) {
             if (e.offsetX >= width) {columnNumber--;}
             activeNumber = columnNumber;
             setActive(nodes[columnNumber]);
+        }
+    });
+    target.mouseleave(function(){
+        if (jump_back){
+            activeNumber = startpoint;
+            setActive(nodes[activeNumber]);
+        }
+    });
+    target.click(function(){
+        if (jump_back && jumppoint_click){
+            startpoint = activeNumber;
         }
     });
 
@@ -76,7 +98,11 @@ $.fn.photoroller = function(options) {
         this.opt = {
             nodes: options && options.nodes ? $(this).find(options.nodes) :
                    $(this).children().length > 0 ? $(this).children() : null,
-            startpoint: options && options.startpoint ? options.startpoint : 1
+            startpoint: options && options.startpoint ? options.startpoint : 1,
+            jump_back: options &&
+                typeof(options.jump_back) !== 'undefined' ? options.jump_back : false,
+            jumppoint_click: options &&
+                typeof(options.jumppoint_click) !== 'undefined' ? options.jumppoint_click : true
         };
 
         $.photoroller($.extend(this.opt, {target: $(this)}));
