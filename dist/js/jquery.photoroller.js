@@ -16,8 +16,10 @@ $.photoroller = function(options) {
     options = $.extend({startpoint: 1}, options);
 
     var defineTarget = function() {
+            var main = $('#photoroller');
+
             return target = options.target ? options.target :
-                 $('#photoroller').length > 0 ? $('#photoroller') : null;
+                main.length > 0 ? main : null;
         },
         defineNodes = function () {
             return options.nodes ? target.find(options.nodes) :
