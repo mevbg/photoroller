@@ -132,6 +132,22 @@ startpoint: 3 // default: 1
 
 Defines which image to be the first one to show.
 
+### jump\_back
+
+```javascript
+jump_back: true // default: false
+```
+
+Defines whether the image should jump back to the startpoint when the mouse leaves the image.
+
+### jumppoint\_click
+
+```javascript
+jumppoint_click: false // default: true
+```
+
+If jump\_back is active, this option defines whether the image to should jump back to can be set by clicking on the image.
+
 ## Browsers compatibility
 
 - Apple Safari
