@@ -1,6 +1,8 @@
-# jQuery PhotoRoller Plugin v1.1.0
+# jQuery PhotoRoller Plugin
 
 A mouseover cycle-through photo gallery (iPhoto-like).
+
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/) [![Travis](https://img.shields.io/travis/martinmethod/photoroller.svg)](https://travis-ci.org/martinmethod/photoroller) [![David](https://img.shields.io/david/dev/martinmethod/photoroller.svg)](https://david-dm.org/martinmethod/photoroller?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/photoroller.svg)](https://github.com/martinmethod/photoroller/releases/latest)
 
 ## Description
 
@@ -14,7 +16,7 @@ jQuery PhotoRoller Plugin puts a set of images one behind another and turns that
 
 You can [download the plugin as an archive][zip].
 
-[zip]: https://github.com/martinmethod/photoroller/zipball/master
+[zip]: https://github.com/martinmethod/photoroller/zipball/prod
 
 Or you can grab it by using **npm**:
 
@@ -164,6 +166,6 @@ If jump\_back is active, this option defines whether the image to should jump ba
 
 ## License
 
-Copyright © 2015 Martin Metodiev. Licensed under the MIT license. [See here for more details.][licence]
+Copyright © 2017 Martin Metodiev. Licensed under the MIT license. [See here for more details.][licence]
 
-[licence]: https://raw.github.com/martinmethod/photoroller/master/LICENSE-MIT
+[licence]: https://raw.github.com/martinmethod/photoroller/prod/LICENSE-MIT

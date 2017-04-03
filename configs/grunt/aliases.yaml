@@ -1,0 +1,65 @@
+## DEFAULT ##
+
+default:
+  - 'dev'
+
+
+
+## DEV ##
+
+dev:
+   description: 'Firing up the dev environment'
+   tasks:
+     - 'build'
+     - 'serve'
+
+
+
+## SERVE ##
+
+serve:
+  description: 'Running server tasks'
+  tasks:
+    - 'connect'
+    - 'open:dev'
+    - 'watch'
+
+
+
+## MERGE FEATURE ##
+
+merge_feature:
+  description: 'Merging a feature'
+  tasks:
+    - 'shell:feature'
+
+
+
+## PREPARE RELEASE ##
+
+prepare_release:
+  description: 'Preparing for a new release'
+  tasks:
+    - 'shell:prepare'
+
+
+
+## RELEASE ##
+
+release_patch:
+  description: 'Releasing a patch version'
+  tasks:
+    - 'bump-only:patch'
+    - 'shell:release'
+
+release_minor:
+  description: 'Releasing a minor version'
+  tasks:
+    - 'bump-only:minor'
+    - 'shell:release'
+
+release_major:
+  description: 'Releasing a major version'
+  tasks:
+    - 'bump-only:major'
+    - 'shell:release'

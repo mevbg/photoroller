@@ -16,7 +16,7 @@
     "jQuery",
     "plugin"
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "http://photoroller.martinmetodiev.com",
   "demo": "http://photoroller.martinmetodiev.com",
   "author": {
@@ -43,21 +43,41 @@
     "jquery": "2.x"
   },
   "devDependencies": {
-    "bower": "^1.4.1",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-csslint": "^0.5.0",
-    "grunt-contrib-concat": "~0.5.1",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-bump": "^0.3.1",
-    "grunt-text-replace": "^0.4.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "compass-mixins": "^0.12.10",
+    "grunt": "^1.0.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-bump": "^0.8.0",
+    "grunt-concurrent": "^2.0.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-conventional-changelog": "^6.1.0",
+    "grunt-open": "^0.2.3",
+    "grunt-puglint": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-sass-lint": "^0.2.2",
+    "grunt-shell": "^2.1.0",
+    "http-rewrite-middleware": "^0.1.6",
+    "lib-sass-data-uri": "0.0.2",
+    "load-grunt-config": "^0.19.2",
+    "load-grunt-tasks": "^3.2.0",
+    "node-sass-globbing": "0.0.23",
+    "time-grunt": "^1.2.1"
   },
   "main": "dist/js/jquery.photoroller.min.js",
   "directories": {},
   "engines": {
     "node": ">= 0.8.0"
-  }
+  },
+  "scripts": {
+    "start": "npm install && grunt clean:all && grunt build"
+  },
+  "sasslintConfig": "configs/linters/.sass-lint.yml"
 }

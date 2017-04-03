@@ -1,0 +1,50 @@
+{
+
+  // Enforcing options
+  "bitwise": true,
+  "camelcase": false,
+  "curly": true,
+  "eqeqeq": true,
+  "es3": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 4,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "strict": false,
+  "maxparams": 3,
+  "maxdepth": 3,
+  "maxstatements": 50,
+  "maxcomplexity": 5,
+  "maxlen": 100,
+
+  // Relaxing options
+  "debug": true,
+  "multistr": true,
+  "scripturl": true,
+
+  // Environments
+  "browser": true,
+  "jquery": true,
+  "devel": true,
+
+  // Disable radix parameter check
+  "-W065": true,
+
+  // Others
+  "sub": true,
+  "boss": true,
+  "eqnull": true,
+  "predef": [
+    "JSON",
+    "jQuery",
+    "showdown",
+    "Prism",
+    "Typekit"
+  ]
+
+}
