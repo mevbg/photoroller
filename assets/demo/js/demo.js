@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){a('#photoroller').photoroller({startpoint:6}),a.photoroller({target:a('#photoroller2'),startpoint:5})});
