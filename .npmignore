@@ -1,12 +1,4 @@
-.git
-.gitignore
-CVS
-.svn
-.hg
-.lock-wscript
-.wafpickle-N
-*.swp
-.DS_Store
-._*
-npm-debug.log
-CNAME
+.travis.yml
+deploy_dir
+deploy_key.enc
+deploy.sh

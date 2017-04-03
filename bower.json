@@ -42,13 +42,8 @@
     "dist/css/photoroller.min.css.map"
   ],
   "ignore": [
-    "**/.*",
-    "demo_components",
-    ".bowerrc",
-    ".csslintrc",
-    ".jshintrc",
-    "Gruntfile.js",
-    "index.html",
-    "package.json"
+    ".travis.yml",
+    "deploy_key.enc",
+    "deploy.sh"
   ]
 }

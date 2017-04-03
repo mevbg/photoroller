@@ -1,0 +1,47 @@
+// =========================| Demo styles |========================= //
+
+
+
+//--------------------------| Compass
+
+@import '../../../node_modules/compass-mixins/lib/compass';
+
+
+
+.photoroller {
+
+//====================> 1. Base
+
+//------------------> 1.1. Parent
+
+  position: relative;
+
+
+//------------------> 1.2. Image
+
+  .pr-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+    img {
+      display: block;
+    }
+  }
+
+
+
+//====================> 2. States
+
+//------------------> 2.1. Active
+
+  .pr-active {
+    position: static;
+    display: block;
+    visibility: visible;
+  }
+
+
+} // .photoroller

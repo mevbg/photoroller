@@ -1,8 +1,0 @@
-/*!
-  jQuery PhotoRoller Plugin v1.1.0
-  http://photoroller.martinmetodiev.com
-
-  Copyright (c) 2015 Martin Metodiev
-  Licensed under the MIT license.
-*/.photoroller{position:relative}.photoroller .pr-img{overflow:hidden;position:absolute;left:0;top:0;visibility:hidden}.photoroller .pr-img img{display:block}.photoroller .pr-active{display:block;position:static;visibility:visible}
-/*# sourceMappingURL=photoroller.min.css.map */
