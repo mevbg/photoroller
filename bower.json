@@ -16,7 +16,7 @@
     "jQuery",
     "plugin"
   ],
-  "version": "1.2.0",
+  "version": "1.3.0",
   "homepage": "http://photoroller.martinmetodiev.com",
   "authors": [
     {
@@ -42,8 +42,6 @@
     "dist/css/photoroller.min.css.map"
   ],
   "ignore": [
-    ".travis.yml",
-    "deploy_key.enc",
-    "deploy.sh"
+    ".travis.yml"
   ]
 }

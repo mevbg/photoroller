@@ -6,7 +6,8 @@ module.exports = {
     data: {
       debug: !grunt.pluginData.prod,
       pkg: grunt.pluginData.pkg,
-      envPath: grunt.pluginData.envPath
+      envPath: grunt.pluginData.envPath,
+      analytics: '<%= settings.analytics %>'
     }
   },
 
