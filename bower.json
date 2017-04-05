@@ -42,8 +42,6 @@
     "dist/css/photoroller.min.css.map"
   ],
   "ignore": [
-    ".travis.yml",
-    "deploy_key.enc",
-    "deploy.sh"
+    ".travis.yml"
   ]
 }
