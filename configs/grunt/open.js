@@ -3,7 +3,7 @@ var grunt = require('grunt');
 module.exports = {
   dev : {
     app: 'Google Chrome',
-    path: 'http://localhost:<%= settings.port %>'
+    path: 'http://localhost:<%= common.port %>'
   },
 
   prod : {
@@ -13,11 +13,11 @@ module.exports = {
 
   build: {
     app: 'Google Chrome',
-    path: 'https://travis-ci.org/<%= settings.githubUsername %>/<%= pkg.name %>/builds'
+    path: 'https://travis-ci.org/<%= common.githubUsername %>/<%= pkg.name %>/builds'
   },
 
   repo: {
     app: 'Google Chrome',
-    path: 'https://github.com/<%= settings.githubUsername %>/<%= pkg.name %>'
+    path: 'https://github.com/<%= common.githubUsername %>/<%= pkg.name %>'
   }
 };

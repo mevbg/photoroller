@@ -7,7 +7,7 @@ module.exports = {
         expand: true,
         cwd: './',
         flatten: true,
-        src: ['<%= settings.assetsPath %>dist/css/*.*'],
+        src: ['<%= assets %>dist/css/*.*'],
         dest: 'assets/page/css'
       }
     ]
@@ -19,7 +19,7 @@ module.exports = {
         expand: true,
         cwd: './',
         flatten: true,
-        src: ['<%= settings.assetsPath %>dist/js/*.*'],
+        src: ['<%= assets %>dist/js/*.*'],
         dest: 'assets/page/js'
       }
     ]
@@ -31,8 +31,17 @@ module.exports = {
         expand: true,
         cwd: './',
         flatten: true,
-        src: ['<%= settings.assetsPath %>dist/favicons/*.*'],
+        src: ['<%= assets %>dist/favicons/*.*'],
         dest: 'assets/page/favicons'
+      }
+    ]
+  },
+
+  demo_markup: {
+    files: [
+      {
+        src: ['src/demo/markup/demo.html'],
+        dest: 'assets/demo/demo.html'
       }
     ]
   },

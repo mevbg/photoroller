@@ -1,29 +1,30 @@
 module.exports = function(grunt) {
   var path = require('path'),
+      assets = grunt.file.exists('../assets.json') ?
+               grunt.file.readJSON('../assets.json').path :
+               'node_modules/my-jquery-plugins-assets/',
+      common = grunt.file.readJSON(assets + 'configs/common.json'),
       pkg = grunt.file.readJSON('package.json'),
       settings = grunt.file.readJSON('configs/settings.json'),
+      banner = require(assets + 'configs/banner'),
       env = grunt.option('target') || 'dev',
       prod = env === 'prod';
 
   grunt.pluginData = {
+    assets: assets,
     pkg: pkg,
+    common: common,
     settings: settings,
     prod: prod,
     env: env,
 
     envPath: !prod ?
-      'assets/page/' :
-      'http://assets.martinmetodiev.com/',
+             'assets/page/' :
+             'http://assets.' + common.domain + '/',
 
-    banner: '/*! \n' +
-            ' <%= pkg.title %> v<%= pkg.version %>\n' +
-            ' <%= pkg.homepage%>\n' +
-            '\n' +
-            ' Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
-            ' Licensed under the <%= pkg.license %> license.\n' +
-            '*/\n',
+    banner: banner,
 
-    domain: pkg.name.toLowerCase() + '.martinmetodiev.com'
+    domain: pkg.name.toLowerCase() + '.' + common.domain
   };
 
   require('time-grunt')(grunt);
@@ -37,5 +38,4 @@ module.exports = function(grunt) {
     grunt.task.run(['concurrent:build']);
     grunt.task.run(['concurrent:' + env]);
   });
-
 };
