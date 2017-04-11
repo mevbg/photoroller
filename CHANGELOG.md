@@ -1,3 +1,13 @@
+<a name="1.3.1"></a>
+## 1.3.1 (2017-04-11)
+
+
+### Features
+
+* **Build:** External markup support ([5f7e41c](https://github.com/martinmethod/photoroller/commit/5f7e41c))
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2017-04-05)
 
