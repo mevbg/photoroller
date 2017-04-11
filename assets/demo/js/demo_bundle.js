@@ -6,13 +6,22 @@
 
 jQuery(document).ready(function($) {
 
-  $('#photoroller').photoroller({
-    startpoint: 6 // optional (default: 1)
-  });
+  'use strict';
 
-  $.photoroller({
-    target: $('#photoroller2'), // optional (default: $('#photoroller'))
-    startpoint: 5 // optional (default: 1)
+  $.ajax({
+    url: 'assets/demo/demo.html',
+    dataType: 'html'
+  }).done(function(response) {
+    $('.demo-holder .content').html(response).promise().done(function(){
+      $('#photoroller').photoroller({
+        startpoint: 6 // optional (default: 1)
+      });
+
+      $.photoroller({
+        target: $('#photoroller2'), // optional (default: $('#photoroller'))
+        startpoint: 5 // optional (default: 1)
+      });
+    });
   });
 
 });
