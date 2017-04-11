@@ -1,6 +1,4 @@
 {
-  "port": 8000,
-  "assetsPath": "../my-jquery-plugins-assets/",
-  "githubUsername": "martinmethod",
-  "analytics": "UA-4977149-9"
+  "analytics": "UA-4977149-9",
+  "pluginStyles": true
 }

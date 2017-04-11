@@ -60,7 +60,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-conventional-changelog": "^6.1.0",
     "grunt-open": "^0.2.3",
-    "grunt-puglint": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "grunt-sass-lint": "^0.2.2",
     "grunt-shell": "^2.1.0",
@@ -68,6 +67,7 @@
     "lib-sass-data-uri": "0.0.2",
     "load-grunt-config": "^0.19.2",
     "load-grunt-tasks": "^3.2.0",
+    "my-jquery-plugins-assets": " git://github.com/martinmethod/my-jquery-plugins-assets.git#v1.6.0",
     "node-sass-globbing": "0.0.23",
     "time-grunt": "^1.2.1"
   },
