@@ -1,7 +1,10 @@
 var grunt = require('grunt'),
 
+  // page markup
+  pageMarkupTasks = ['pug:page'],
+
   // demo markup
-  demoMarkupTasks = ['pug:demo'],
+  demoMarkupTasks = ['clean:demo_markup', 'copy:demo_markup'],
 
   // demo styles
   demoStylesTasks = ['sass:demo'],
@@ -22,6 +25,7 @@ var grunt = require('grunt'),
 
 module.exports = {
   build: [
+    pageMarkupTasks,
     demoMarkupTasks,
     demoStylesTasks,
     demoScriptsTasks,
