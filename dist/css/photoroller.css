@@ -1,8 +1,8 @@
 /*! 
- jQuery PhotoRoller Plugin v1.3.1
- http://photoroller.martinmetodiev.com
+ jQuery PhotoRoller Plugin v1.4.0
+ https://photoroller.metodiev.dev
 
- Copyright (c) 2017 Martin Metodiev
+ Copyright (c) 2020 Martin Metodiev
  Licensed under the MIT license.
 */
 

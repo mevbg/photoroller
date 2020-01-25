@@ -8,6 +8,7 @@ var grunt = require('grunt'),
 
 module.exports = {
   options: {
+    implementation: sass,
     importer: nodeSassGlobbing,
     functions: Object.assign({}, sassDataURI)
   },
