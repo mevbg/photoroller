@@ -17,12 +17,12 @@
     "plugin"
   ],
   "version": "1.3.1",
-  "homepage": "http://photoroller.martinmetodiev.com",
+  "homepage": "http://photoroller.metodiev.dev",
   "authors": [
     {
       "name": "Martin Metodiev",
       "email": "metodiev.martin@gmail.com",
-      "url": "http://martinmetodiev.com"
+      "url": "http://metodiev.dev"
     }
   ],
   "repository": {

@@ -4,7 +4,7 @@ node_js:
 script:
 - printf 'configs/\nsrc/\n.npmignore\n.travis.yml\nCHANGELOG.md\nGruntfile.js\nbower.json\nLICENSE-MIT\npackage.json\nnode_modules/\n.gitignore\ndeployed*' > .gitignore
 - printf '.npmignore\n.travis.yml\nCNAME' > .npmignore
-- printf 'photoroller.martinmetodiev.com' > CNAME
+- printf 'photoroller.metodiev.dev' > CNAME
 branches:
   only:
   - /^v\d+\.\d+(\.\d+)?(-\S*)?$/

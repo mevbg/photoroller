@@ -10,7 +10,7 @@ jQuery PhotoRoller Plugin puts a set of images one behind another and turns that
 
 ## Demo
 
-<a href="http://photoroller.martinmetodiev.com" target="_blank">photoroller.martinmetodiev.com</a>
+<a href="http://photoroller.metodiev.dev" target="_blank">photoroller.metodiev.dev</a>
 
 ## Getting Started
 
