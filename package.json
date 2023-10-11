@@ -41,7 +41,7 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "3.x",
-    "node-sass": "^4.13.1"
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {
     "compass-mixins": "^0.12.10",
