@@ -21,27 +21,30 @@
   "demo": "https://photoroller.metodiev.dev",
   "author": {
     "name": "Martin Metodiev",
-    "email": "metodiev.martin@gmail.com",
+    "email": "martin@metodiev.dev",
     "url": "https://metodiev.dev"
   },
   "maintainers": [
     {
       "name": "Martin Metodiev",
-      "email": "metodiev.martin@gmail.com",
+      "email": "martin@metodiev.dev",
       "url": "https://metodiev.dev"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/martinmethod/photoroller.git"
+    "url": "git://github.com/methodev/photoroller.git"
   },
   "bugs": {
-    "url": "https://github.com/martinmethod/photoroller/issues"
+    "url": "https://github.com/methodev/photoroller/issues"
   },
   "license": "MIT",
   "dependencies": {
     "jquery": "3.x",
     "node-sass": "^4.13.1"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "devDependencies": {
     "compass-mixins": "^0.12.10",
@@ -68,17 +71,15 @@
     "lib-sass-data-uri": "0.0.4",
     "load-grunt-config": "^3.0.1",
     "load-grunt-tasks": "^5.1.0",
-    "my-jquery-plugins-assets": " git://github.com/martinmethod/my-jquery-plugins-assets.git#v1.7.1",
+    "my-jquery-plugins-assets": " git://github.com/methodev/my-jquery-plugins-assets.git#v1.7.1",
     "node-sass-globbing": "0.0.23",
     "time-grunt": "^2.0.0"
   },
   "main": "dist/js/jquery.photoroller.min.js",
   "directories": {},
-  "engines": {
-    "node": ">= 0.8.0"
-  },
   "scripts": {
-    "start": "npm install && grunt clean:all && grunt build"
+    "start": "npm install && grunt clean:all && grunt build",
+    "build": "grunt build"
   },
   "sasslintConfig": "configs/linters/.sass-lint.yml"
 }
