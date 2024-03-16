@@ -2,12 +2,6 @@
 
 A mouseover cycle-through photo gallery (iPhoto-like).
 
-<<<<<<< HEAD
-[![GitHub license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://raw.githubusercontent.com/martinmethod/photoroller/prod/LICENSE-MIT) [![Travis](https://img.shields.io/travis/martinmethod/photoroller.svg)](https://travis-ci.org/martinmethod/photoroller) [![David](https://img.shields.io/david/dev/martinmethod/photoroller.svg)](https://david-dm.org/martinmethod/photoroller?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/photoroller.svg)](https://github.com/martinmethod/photoroller/releases/latest) [![npm](https://img.shields.io/npm/v/photoroller.svg)](https://www.npmjs.com/package/photoroller) [![Bower](https://img.shields.io/bower/v/photoroller.svg)](https://github.com/martinmethod/photoroller)
-=======
-[![Built with Grunt](http://cdn.gruntjs.com/builtwith.svg)](https://gruntjs.com/) [![GitHub license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://raw.githubusercontent.com/martinmethod/photoroller/prod/LICENSE-MIT) [![Travis](https://img.shields.io/travis/martinmethod/photoroller.svg)](https://travis-ci.org/martinmethod/photoroller) [![David](https://img.shields.io/david/dev/martinmethod/photoroller.svg)](https://david-dm.org/martinmethod/photoroller?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/photoroller.svg)](https://github.com/martinmethod/photoroller/releases/latest) [![npm](https://img.shields.io/npm/v/photoroller.svg)](https://www.npmjs.com/package/photoroller) [![Bower](https://img.shields.io/bower/v/photoroller.svg)](https://github.com/martinmethod/photoroller)
->>>>>>> dev
-
 ## Description
 
 jQuery PhotoRoller Plugin puts a set of images one behind another and turns that deck of images into a beautiful slideshow. All you need to do is move the mouse cursor horizontally throughout the deck and all images will show sequentially depending on the x-position of the cursor in the container area. Just like the iPhoto thumbnails preview.
