@@ -71,7 +71,7 @@
     "lib-sass-data-uri": "0.0.4",
     "load-grunt-config": "^3.0.1",
     "load-grunt-tasks": "^5.1.0",
-    "my-jquery-plugins-assets": " git://github.com/methodev/my-jquery-plugins-assets.git#v1.7.1",
+    "my-jquery-plugins-assets": "github:mevbg/my-jquery-plugins-assets#v1.8.0",
     "node-sass-globbing": "0.0.23",
     "time-grunt": "^2.0.0"
   },
