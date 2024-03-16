@@ -40,8 +40,5 @@
     "dist/css/photoroller.css",
     "dist/css/photoroller.min.css",
     "dist/css/photoroller.min.css.map"
-  ],
-  "ignore": [
-    ".travis.yml"
   ]
 }
