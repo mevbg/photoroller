@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   var path = require('path'),
       assets = grunt.file.exists('../assets.json') ?
                grunt.file.readJSON('../assets.json').path :
-               'node_modules/my-jquery-plugins-assets/',
+               './node_modules/my-jquery-plugins-assets/',
       common = grunt.file.readJSON(assets + 'configs/common.json'),
       pkg = grunt.file.readJSON('package.json'),
       settings = grunt.file.readJSON('configs/settings.json'),
