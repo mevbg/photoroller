@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
     envPath: !prod ?
              'assets/page/' :
-             'https://assets.' + common.domain + '/',
+             'https://jquery-plugins.' + common.domain + '/',
 
     banner: banner,
 
