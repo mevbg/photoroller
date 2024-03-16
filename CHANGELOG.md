@@ -9,7 +9,7 @@
 
 ### Features
 
-* **Build:** External markup support ([5f7e41c](https://github.com/martinmethod/photoroller/commit/5f7e41c))
+* **Build:** External markup support ([5f7e41c](https://github.com/mevbg/photoroller/commit/5f7e41c))
 
 
 
@@ -19,12 +19,12 @@
 
 ### Bug Fixes
 
-* **Google Analytics:** Missed ID ([b6dcec0](https://github.com/martinmethod/photoroller/commit/b6dcec0))
+* **Google Analytics:** Missed ID ([b6dcec0](https://github.com/mevbg/photoroller/commit/b6dcec0))
 
 
 ### Features
 
-* **Deploy:** npm, GitHub Pages & GitHub Releases ([4fe749a](https://github.com/martinmethod/photoroller/commit/4fe749a))
+* **Deploy:** npm, GitHub Pages & GitHub Releases ([4fe749a](https://github.com/mevbg/photoroller/commit/4fe749a))
 
 
 
@@ -34,7 +34,7 @@
 
 ### Features
 
-* **Building system:** Refactored building system ([ee10065](https://github.com/martinmethod/photoroller/commit/ee10065))
+* **Building system:** Refactored building system ([ee10065](https://github.com/mevbg/photoroller/commit/ee10065))
 
 
 

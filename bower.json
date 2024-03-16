@@ -17,17 +17,17 @@
     "plugin"
   ],
   "version": "1.4.0",
-  "homepage": "https://photoroller.metodiev.dev",
+  "homepage": "https://photoroller.mev.bg",
   "authors": [
     {
       "name": "Martin Metodiev",
-      "email": "metodiev.martin@gmail.com",
-      "url": "https://metodiev.dev"
+      "email": "martin@mev.bg",
+      "url": "https://mev.bg"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/martinmethod/photoroller.git"
+    "url": "git://github.com/mevbg/photoroller.git"
   },
   "license": "MIT",
   "dependencies": {

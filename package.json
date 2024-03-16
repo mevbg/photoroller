@@ -17,18 +17,18 @@
     "plugin"
   ],
   "version": "1.4.0",
-  "homepage": "https://photoroller.metodiev.dev",
-  "demo": "https://photoroller.metodiev.dev",
+  "homepage": "https://photoroller.mev.bg",
+  "demo": "https://photoroller.mev.bg",
   "author": {
     "name": "Martin Metodiev",
-    "email": "martin@metodiev.dev",
-    "url": "https://metodiev.dev"
+    "email": "martin@mev.bg",
+    "url": "https://mev.bg"
   },
   "maintainers": [
     {
       "name": "Martin Metodiev",
-      "email": "martin@metodiev.dev",
-      "url": "https://metodiev.dev"
+      "email": "martin@mev.bg",
+      "url": "https://mev.bg"
     }
   ],
   "repository": {

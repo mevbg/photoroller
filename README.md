@@ -8,13 +8,13 @@ jQuery PhotoRoller Plugin puts a set of images one behind another and turns that
 
 ## Demo
 
-<a href="https://photoroller.metodiev.dev" target="_blank">photoroller.metodiev.dev</a>
+<a href="https://photoroller.mev.bg" target="_blank">photoroller.mev.bg</a>
 
 ## Getting Started
 
 You can [download the plugin as an archive][zip].
 
-[zip]: https://github.com/martinmethod/photoroller/zipball/prod
+[zip]: https://github.com/mevbg/photoroller/zipball/prod
 
 Or you can grab it by using **npm**:
 
@@ -166,4 +166,4 @@ If jump\_back is active, this option defines whether the image to should jump ba
 
 Copyright © 2017 Martin Metodiev. Licensed under the MIT license. [See here for more details.][licence]
 
-[licence]: https://raw.github.com/martinmethod/photoroller/prod/LICENSE-MIT
+[licence]: https://raw.github.com/mevbg/photoroller/prod/LICENSE-MIT
